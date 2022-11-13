@@ -334,6 +334,7 @@ transform: scaleX(1);
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:focus {
     fill: #2196F3;
@@ -367,6 +368,7 @@ width: 100%;
 display: flex;
 margin-bottom: 10px;
 padding-top: 18px;
+transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
@@ -412,6 +414,17 @@ left: 12px;
 transform: translateY(-50%);
 display: block;
 }
+
+.checkbox-form {
+/*
+display: flex;
+align-items: center;
+justify-content: center;
+*/
+
+gap: 9px;
+}
+
 .checkbox {
     cursor: pointer;
 }
@@ -419,7 +432,20 @@ display: block;
 .icon-checkbox {
     width: 16px;
     height: 15px;
-    
+}
+.icon-checkbox .unchecked {
+opacity: 1;
+transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .icon-checkbox .unchecked {
+    opacity: 0;
+}
+.icon-checkbox .checked {
+opacity: 0;
+transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .icon-checkbox .checked {
+    opacity: 1;
 }
 
 .checkbox-text {
@@ -430,6 +456,7 @@ display: block;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    cursor: pointer;
 }
 
 .umovy-dohovoru {
@@ -449,6 +476,7 @@ display: block;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-massage::placeholder {
     font-weight: 400;
