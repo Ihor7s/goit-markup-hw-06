@@ -371,7 +371,8 @@ padding-top: 18px;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-massage:focus {
     border: 1px solid #2196F3;
 }
 .form-input:focus-visible {
@@ -390,6 +391,7 @@ transition: cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     padding-left: 42px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus + .form-icon {
     fill: #2196F3;
@@ -489,11 +491,13 @@ transition: cubic-bezier(0.4, 0, 0.2, 1);
 .form-massage:focus-visible {
     outline: none;
 }
+
+/*
 .form-massage:focus {
     border: 1px solid #2196F3;
-
-
+*/
 /*наші переваги наші особливості, секція 2*/
+
 .section-features {
     padding-top: 94px;
     padding-bottom: 94px;  
@@ -886,6 +890,7 @@ margin-bottom: 9px;
     margin-right: 12px;
     outline: transparent;
     color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
 }
 .form-footer-email::placeholder {
     font-weight: 400;
@@ -895,7 +900,7 @@ margin-bottom: 9px;
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
+    
 }
 
 .subscribe-button {
