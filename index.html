@@ -72,36 +72,43 @@
                     <form class="modal-form" action="">
                         <div class="form-group">
                             <label class="form-field" for="">
-                                <input class="form-input" type="text">
                                 <span class="form-label">Ім'я</span>
+                                <input class="form-input" type="text" placeholder=" ">
                                 <svg class="form-icon">
                                     <use href="./images/symbol-defs.svg#icon-person-modal"></use>
                                 </svg>
                             </label>
                             <label class="form-field" for="">
-                                <input class="form-input" type="text">
                                 <span class="form-label">Телефон</span>
+                                <input class="form-input" type="tel">
                                 <svg class="form-icon">
                                     <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
                                 </svg>
                             </label>
                             <label class="form-field" for="">
-                                <input class="form-input" type="text">
                                 <span class="form-label">Пошта</span>
+                                <input class="form-input" type="email">
                                 <svg class="form-icon">
                                     <use href="./images/symbol-defs.svg#icon-email-modal"></use>
                                 </svg>
                             </label>
+
                             <label class="form-field" for="">
-                                <textarea class="form-massage" name="" id="" cols="30" rows="10"></textarea>
-                                <span>Коментар</span>
+                                <span class="form-label">Коментар</span>
+                                <textarea class="form-massage" name="user_message"  cols="" rows="6" placeholder="Введіть текст"></textarea>
                             </label>
                         </div>
-                            <label for="">
-                                <input type="checkbox">
-                                <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </span>
+                        
+                            <label class="checkbox-form" for="">
+                                <input class="checkbox" type="checkbox">
+                                <svg class="icon-checkbox">
+                                    <use href=""></use>
+                                    <use href=""></use>
+                                </svg>
+                                <span class="checkbox-text" >Погоджуюся з розсилкою та приймаю <a class="umovy-dohovoru" href="">Умови договору</a> </span>
                             </label>
-                            <button type="submit">Відправити</button>
+
+                        <button class="button" type="submit">Відправити</button>
                     </form>
 
                 </div>
