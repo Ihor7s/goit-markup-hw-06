@@ -73,24 +73,30 @@
                         <div class="form-group">
                             <label class="form-field" for="">
                                 <span class="form-label">Ім'я</span>
-                                <input class="form-input" type="text" placeholder=" ">
-                                <svg class="form-icon">
-                                    <use href="./images/symbol-defs.svg#icon-person-modal"></use>
-                                </svg>
+                                <span class="form-input-svg">
+                                    <input class="form-input" type="text" placeholder=" ">
+                                    <svg class="form-icon">
+                                        <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+                                    </svg>
+                                </span>
                             </label>
                             <label class="form-field" for="">
                                 <span class="form-label">Телефон</span>
-                                <input class="form-input" type="tel">
-                                <svg class="form-icon">
-                                    <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
-                                </svg>
+                                <span class="form-input-svg">
+                                    <input class="form-input" type="tel">
+                                    <svg class="form-icon">
+                                        <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
+                                    </svg>
+                                </span>
                             </label>
                             <label class="form-field" for="">
                                 <span class="form-label">Пошта</span>
-                                <input class="form-input" type="email">
-                                <svg class="form-icon">
-                                    <use href="./images/symbol-defs.svg#icon-email-modal"></use>
-                                </svg>
+                                <span class="form-input-svg">
+                                    <input class="form-input" type="email">
+                                    <svg class="form-icon">
+                                        <use href="./images/symbol-defs.svg#icon-email-modal"></use>
+                                    </svg>
+                                </span>
                             </label>
 
                             <label class="form-field" for="">
@@ -100,12 +106,12 @@
                         </div>
                         
                             <label class="checkbox-form" for="">
-                                <input class="checkbox" type="checkbox">
+                                <input class="checkbox visually-hidden" type="checkbox">
                                 <svg class="icon-checkbox ">
                                     <use class="unchecked" href="./images/symbol-defs.svg#icon-checkbox-off"></use>
                                     <use class="checked" href="./images/symbol-defs.svg#icon-checkbox-on"></use>
                                 </svg>
-                                <span class="checkbox-text" >Погоджуюся з розсилкою та приймаю <a class="umovy-dohovoru" href="">Умови договору</a> </span>
+                                <span class="checkbox-text" >Погоджуюся з розсилкою та приймаю <a class="umovy-dohovoru" href="">Умови договору</a></span>
                             </label>
 
                         <button class="button" type="submit">Відправити</button>
@@ -443,13 +449,14 @@
             <div class="footer-subscribe-newsletter">
                 <p class="footer-subscribe-text">Підпишіться на розсилку</p>
                 <form class="form-footer-subscribe" name="email-footer-subscribe" autocomplete="on" novalidate>
-                    <label >
-                        <input class="form-footer-email" type="email" name="email" placeholder="E-mail"/><button class="subscribe-button" type="submit">Підписатися
-                            <svg class="icon-subscribe-button">
-                                <use href="./images/symbol-defs.svg#icon-form-footer-subscribe"></use>
-                            </svg>
-                        </button>
+                    <label class="label-form-footer-email">
+                        <input class="form-footer-email" type="email" name="email" placeholder="E-mail"/>
                     </label>
+                    <button class="subscribe-button" type="submit">Підписатися
+                        <svg class="icon-subscribe-button">
+                            <use href="./images/symbol-defs.svg#icon-form-footer-subscribe"></use>
+                        </svg>
+                    </button>
                 </form>
 
             </div>
