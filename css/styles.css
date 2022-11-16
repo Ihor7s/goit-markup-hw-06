@@ -315,10 +315,7 @@ transform: scaleX(1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     z-index: 2;
-    padding: 40px
-    ;
-    
-    
+    padding: 40px;
 }
 .modal-button {
     position: absolute;
@@ -417,7 +414,6 @@ position: relative;
 width: 100%;
 }
 
-
 .form-icon {
 width: 18px;
 height: 18px;
@@ -428,57 +424,76 @@ transform: translateY(-50%);
 display: block;
 }
 
-.checkbox-form {
-
-gap: 9px;
-display: flex;
-justify-content: center;
-position: relative;
-margin-bottom: 30px;
-}
-
+/* чекбокс sv
 .checkbox {
     cursor: pointer;
-    
 }
-
-
-.icon-checkbox { 
+.icon-checkbox {
     width: 16px;
     height: 15px;
     display: flex;
     cursor: pointer;
 }
-
 .icon-checkbox .unchecked {
-opacity: 1;
-transition: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox:checked + .icon-checkbox .unchecked {
+.checkbox:checked+.icon-checkbox .unchecked {
     opacity: 0;
 }
 .icon-checkbox .checked {
-opacity: 0;
-transition: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox:checked + .icon-checkbox .checked {
+.checkbox:checked+.icon-checkbox .checked {
     opacity: 1;
 }
+*/
 
-.checkbox-text {
+.checkbox-form {
+    gap: 9px;
     display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    justify-content: center;
+}
+
+
+.checkbox {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='10' fill='none'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    background-position: center;
+}
+
+.checkbox:checked {
+    background-color: #2196F3;
+    border: transparent;
+}
+.checkbox-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    cursor: pointer;
+    user-select: none;
 }
-
 .umovy-dohovoru {
     text-decoration-line: underline;
     color: #2196F3;
 }
+
 
 .form-massage {
     padding: 12px 16px;
@@ -494,6 +509,7 @@ transition: cubic-bezier(0.4, 0, 0.2, 1);
     color: rgba(117, 117, 117, 0.5);
     transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-massage::placeholder {
     font-weight: 400;
     font-size: 12px;
@@ -502,6 +518,7 @@ transition: cubic-bezier(0.4, 0, 0.2, 1);
     color: rgba(117, 117, 117, 0.5);
     resize: none;
 }
+
 .form-massage:focus-visible {
     outline: none;
 }
